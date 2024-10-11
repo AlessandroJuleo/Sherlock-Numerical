@@ -1,2 +1,4 @@
-# Project-1
-I enjoy JavaScript because it utilizes both Functional programming and Object-oriented programming.
+# Project 1: Install Buddy
+
+## User Story
+As a Senior person I am looking for assistance on how to install new apps on my smarthphone.
