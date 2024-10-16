@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/images/logo.png" alt="Game Logo" class="logo">
+         <h1>Guess the Number Game</h1>
+    </header>
+    <img src="./assets/images/sherlock.png" alt="Sherlock Image" class="sherlock-image">
+    <div class="game-container">
+        <p>Enter a number between 1 and 100</p>
+        <input type="number" id="guessInput">
+        <br>
+        <button id="submitButton" onclick="makeGuess()">Submit</button>
+        <p id="result"></p>
+        <p id="remainingAttempts"></p>
+        <button id="playAgainButton" onclick="resetGame()" style="display: none;">Play Again</button>
+    </div>
+    <footer>
+        <p>Thank you for playing the Guess the Number game! Keep challenging your intuition and have fun guessing!</p>
+        <div class="social-networks">
+            <img src="./assets/images/instagram.png" alt="Instagram" class="social-icon">
+            <img src="./assets/images/facebook.png" alt="Facebook" class="social-icon">
+            <img src="./assets/images/twitter.png" alt="X" class="social-icon">
+        </div>
+        <p>© 2024 Coffee Coders. All rights reserved.</p>
+    </footer>
+</body>
+</html>
