@@ -9,7 +9,6 @@ let playAgainBtn;
 let guessInput = document.getElementById("guess-input");
 
 
-
 function checkGuess() {
 
     let guess = document.getElementById("guess-input").value.trim();
