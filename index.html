@@ -1,35 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess the Number</title>
-    <link rel="stylesheet" href="./assets/css/style.css"> </head>
-<body>
-    <header>
-        <img src="./assets/images/logo.png" alt="Game Logo" class="logo">
+    <!-- Corrected CSS path -->
+    <link rel="stylesheet" href="./assets/css/output.css"> 
+</head>
+
+<body class="bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex flex-col items-center justify-center p-4">
+    
+    <!-- Header section with game logo -->
+    <header class="mb-8">
+        <img src="./assets/images/logo.png" alt="Game Logo" class="w-32 mx-auto mb-4">
     </header>
-   
-    <img src="./assets/images/sherlock.png" alt="Sherlock Image" class="sherlock-image">
-    
-    <div class="game-container">
-        <h1>Guess the Number</h1> 
 
-        <p>Guess a number between 1 and 100:</p>
-        <input type="text" id="guess-input"> 
+    <!-- Main game image (e.g., Sherlock Holmes theme) -->
+    <img src="./assets/images/sherlock.png" alt="Sherlock Image" class="w-48 mb-6">
 
-        <button id="guess-button">Guess</button>
-        <p id="message"></p>
-        <p id ="attempts-display"></p>
-    </div>
-    
-    <script src="./assets/js/script.js"></script> </body>
-    
-    <footer>
-        <p>Thank you for playing the Guess the Number game! Keep challenging your intuition and have fun guessing!</p>
-        <div class="social-networks">
-            <img src="./assets/images/instagram.png" alt="Instagram" class="social-icon">
-            <img src="./assets/images/facebook.png" alt="Facebook" class="social-icon">
-            <img src="./assets/images/twitter.png" alt="X" class="social-icon">
+    <!-- Game container -->
+    <div class="game-container bg-white bg-opacity-90 backdrop-blur-md p-8 rounded-2xl shadow-2xl w-full max-w-sm">
+        <h1 class="text-3xl font-extrabold text-center text-gray-800 mb-6 tracking-wider">
+            🎯 Guess the Number
+        </h1> 
+        
+        <!-- Game Description -->
+        <p class="text-gray-700 text-center mb-6 italic">Pick a number between <span class="text-blue-600 font-semibold">1</span> and <span class="text-blue-600 font-semibold">100</span>. Let's see how lucky you are!</p>
+        
+        <!-- Input and Button -->
+        <div class="flex items-center justify-center gap-3 mb-6">
+            <input 
+                type="number" 
+                id="guess-input" 
+                class="p-3 border border-gray-300 rounded-full w-24 text-center focus:outline-none focus:ring-4 focus:ring-purple-400 transition placeholder-gray-400"
+                placeholder="Enter a number (1-100)"
+            > 
+            <button 
+                id="guess-button"
+                class="bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 shadow-md hover:shadow-lg transition-all duration-300">
+                🔍 Guess
+            </button>
         </div>
-        <p>© 2024 Coffee Coders. All rights reserved.</p>
+        
+        <!-- Feedback Message -->
+        <p id="message" class="text-center text-gray-800 font-semibold text-lg mt-4"></p>
 
+    <!-- Corrected JavaScript path -->
+    <script src="./assets/js/game.js"></script>
+</body>
+
+<!-- Footer section with social media icons and copyright information -->
+<footer class="text-center text-white mt-8">
+    <p>Thank you for playing the Guess the Number game! Keep challenging your intuition and have fun guessing!</p>
+
+    <!-- Social media icons -->
+    <div class="social-networks flex justify-center space-x-4 mt-4">
+        <img src="./assets/images/instagram.png" alt="Instagram" class="w-8 h-8">
+        <img src="./assets/images/facebook.png" alt="Facebook" class="w-8 h-8">
+        <img src="./assets/images/twitter.png" alt="Twitter icon" class="w-8 h-8">
+    </div>
+
+    <p class="mt-4">© 2024 Coffee Coders. All rights reserved.</p>
+</footer>
 </html>
+
+
