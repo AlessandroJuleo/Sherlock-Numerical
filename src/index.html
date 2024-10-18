@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="./output.css"> 
+</head>
+<body class="bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex items-center justify-center p-4">
+    <div class="game-container bg-white bg-opacity-90 backdrop-blur-md p-8 rounded-2xl shadow-2xl w-full max-w-sm">
+ 
+        <h1 class="text-3xl font-extrabold text-center text-gray-800 mb-6 tracking-wider">
+            🎯 Guess the Number
+        </h1> 
+        
+        <!-- Game Description -->
+        <p class="text-gray-700 text-center mb-6 italic">Pick a number between <span class="text-blue-600 font-semibold">1</span> and <span class="text-blue-600 font-semibold">100</span>. Let's see how lucky you are!</p>
+        
+        <!-- Input and Button -->
+        <div class="flex items-center justify-center gap-3 mb-6">
+            <input 
+                type="number" 
+                id="guess-input" 
+                class="p-3 border border-gray-300 rounded-full w-24 text-center focus:outline-none focus:ring-4 focus:ring-purple-400 transition placeholder-gray-400"
+                placeholder="1-100"
+            > 
+            <button 
+                id="guess-button"
+                class="bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 shadow-md hover:shadow-lg transition-all duration-300">
+                🔍 Guess
+            </button>
+        </div>
+        
+        <!-- Feedback Message -->
+        <p id="message" class="text-center text-gray-800 font-semibold text-lg mt-4"></p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
