@@ -1,4 +1,13 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/*  Previous Code */
+
+/* body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f0f0f0;
@@ -26,6 +35,7 @@ input[type="number"] {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    background-color: blue;
 }
 
 button {
@@ -41,4 +51,4 @@ button {
 button:hover {
     background-color: #45a049;
 
-}
+} */
